@@ -1,0 +1,58 @@
+cabal-version:      3.0
+name:               getshop-test
+version:            0.1.0.0
+-- synopsis:
+-- description:
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             papagvas
+maintainer:         papagvas@proton.me
+-- copyright:
+category:           Network
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+library
+    import:           warnings
+    exposed-modules:  Server
+                   ,  ParseOpts
+                   ,  Cache
+                   ,  Types
+    build-depends:    base ^>=4.17.2.0
+                   ,  optparse-applicative
+                   ,  mtl
+                   ,  text
+                   ,  servant-server
+                   ,  psqueues
+                   ,  time
+                   ,  hashable
+                   ,  wreq
+                   ,  aeson
+                   ,  microlens
+                   ,  vector
+                   ,  unordered-containers
+    hs-source-dirs:   src
+    default-language: Haskell2010
+    
+    default-extensions: OverloadedStrings
+                      , ImportQualifiedPost
+
+executable getshop-test
+    import:           warnings
+    main-is:          Main.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:
+        base ^>=4.17.2.0,
+        getshop-test,
+        unordered-containers,
+        warp,
+        yaml,
+        directory
+
+    hs-source-dirs:   app
+    default-language: Haskell2010
