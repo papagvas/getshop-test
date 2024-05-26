@@ -1,6 +1,0 @@
-port: 8080
-locations: [[81.5, 55.7], [11.2, 15.3], [22.1, 40.8]]
-updatePeriod: 1h
-measurementError: 2
-apiRoot: https://api.openweathermap.org/data/2.5/weather 
-apiKey: d48f3e3694ba38b3704b853c5e9e4b3c
