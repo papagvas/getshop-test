@@ -1,5 +1,3 @@
-# Test task for GetShopTV job interview
+# Simple weather proxy server
 
-<p> I decided against implementing env variables. Server implemented using ReaderT pattern. </p> 
-
-<p>For http requests I used wreq and I experimented a bit with argument parsing using ReadP with optparse-applicative </p>
+<p> This project showcases basic lenses, servant, mtl and parsing skills.  </p> 
