@@ -119,5 +119,4 @@ apiKeyParser = option auto
   (  long "apiKey" 
   <> short 'k' 
   <> metavar "APIKEY" 
-  <> value "d48f3e3694ba38b3704b853c5e9e4b3c"
   )
